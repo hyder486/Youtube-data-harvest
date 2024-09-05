@@ -46,7 +46,7 @@ mydb = sql.connect(host="localhost",
 mycursor = mydb.cursor(buffered=True)
 
 # BUILDING CONNECTION WITH YOUTUBE API
-api_key = "AIzaSyBN-kBIWq_7bt8_lcVaP8Z8qt3fxsT0mVg"
+api_key = "your API key"
 youtube = build('youtube','v3',developerKey=api_key)
 
 
@@ -397,7 +397,7 @@ if selected == "Extract and Transform":
         mydb.commit()
         
 
-    if st.button("Submit"):
+    if st.button("Apply"):
         try:   
             progress_bar = st.progress(0) 
             insert_into_channels()
