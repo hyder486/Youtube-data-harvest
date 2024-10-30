@@ -40,7 +40,7 @@ db = client['capstone_project']
 # CONNECTING WITH MYSQL DATABASE
 mydb = sql.connect(host="localhost",
                    user="root",
-                   password="ahs894",
+                   password="your password",
                    database= "youtube_warehouse"
                   )
 mycursor = mydb.cursor(buffered=True)
